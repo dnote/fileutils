@@ -10,8 +10,8 @@ import (
 	"github.com/pkg/errors"
 )
 
-// FileExists checks if the file exists at the given path
-func FileExists(filepath string) bool {
+// Exists checks if the file exists at the given path
+func Exists(filepath string) bool {
 	_, err := os.Stat(filepath)
 	return !os.IsNotExist(err)
 }
